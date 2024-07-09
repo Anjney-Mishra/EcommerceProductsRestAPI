@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
 
-const URI = "mongodb://localhost:27017/ecommerceprodutapi";
 
-const connectDB = () => {
+const connectDB = (URI) => {
     console.log("DB Connect")
     return mongoose.connect(URI)
 }
